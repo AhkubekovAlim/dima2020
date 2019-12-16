@@ -1,0 +1,215 @@
+@import "bootstrap_mixins";
+@import "fonts";
+@import "variables";
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5{
+  font-weight: 600;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1, h2, h3{
+  font-size: 1rem;
+  color: $color-red;
+  text-transform: uppercase;
+  margin: 12px 0;
+}
+
+h1{
+  font-weight: 900;
+  text-align: center;
+}
+
+h2{
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+h3{
+  font-weight: 700;
+  margin-top: 20px;
+  color: $blue-text;
+  text-transform: uppercase;
+}
+
+a.black-link{
+  color: #000;
+}
+
+.header{
+  margin: 20px auto;
+}
+
+.savedima{
+  font-size: 20px;
+}
+
+.border-top-bold{
+  border-top: 8px solid;
+}
+
+.rekvisit-block{
+  margin: 20px 0;
+}
+
+.banner-text{
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.blue-text{
+  color: $blue-text;
+}
+
+.zolgensma{
+  border: 4px solid;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.yellow-block{
+  padding: 10px;
+  background: $yellow-text;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  &__first, &__second{
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  &__first, .price{
+    font-weight: 900;
+    font-size: 24px;
+  }
+}
+
+.info{
+  margin: 20px 0;
+  &__text{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+.black-block{
+  background: #000;
+  font-weight: 500;
+  padding: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+@include media-breakpoint-up(sm) {
+  h1{
+    font-size: 1.5rem;
+  }
+  h2, h3{
+    font-size: 1.4rem;
+  }
+  .savedima{
+    font-size: 32px;
+  }
+  .yellow-block{
+    font-size: 24px;
+    &__first, .price{
+      font-weight: 900;
+      font-size: 32px;
+    }
+  }
+  .info__text{
+    font-size: 24px;
+  }
+  .black-block{
+    font-size: 24px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  h1{
+    font-size: 2rem;
+  }
+  h2, h3{
+    font-size: 1.8rem;
+  }
+  .savedima{
+    font-size: 40px;
+  }
+  .banner-text{
+    font-weight: 700;
+    font-size: 32px;
+    padding: 10px;
+  }
+  .zolgensma{
+    font-size: 24px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  h1{
+    font-size: 2.5rem;
+  }
+  h2, h3{
+    font-size: 2.2rem;
+  }
+  .savedima{
+    font-size: 48px;
+  }
+  .banner-text{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  .yellow-block{
+    font-size: 28px;
+    &__first, .price{
+      font-weight: 900;
+      font-size: 36px;
+    }
+  }
+  .info__text{
+    font-size: 28px;
+  }
+  .black-block{
+    font-size: 28px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  h1{
+    font-size: 2.6rem;
+  }
+  h2, h3{
+    font-size: 2.3rem;
+  }
+  .header{
+    max-width: 922px;
+  }
+  .savedima{
+    font-size: 54px;
+  }
+  .yellow-block{
+     font-size: 32px;
+     &__first, .price{
+       font-weight: 900;
+       font-size: 40px;
+     }
+   }
+  .info__text{
+    font-size: 32px;
+  }
+  .black-block{
+    font-size: 32px;
+  }
+}
