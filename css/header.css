@@ -136,10 +136,6 @@ a.black-link {
   border-top: 8px solid;
 }
 
-.rekvisit-block {
-  margin: 20px 0;
-}
-
 .banner-text {
   font-weight: 700;
   font-size: 22px;
@@ -179,7 +175,8 @@ a.black-link {
 }
 
 .info {
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .info__text {
@@ -197,6 +194,94 @@ a.black-link {
   text-transform: uppercase;
   margin: 20px 0;
   font-size: 20px;
+}
+
+.rekvisit-block {
+  font-size: 14px;
+  min-height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.clipboard {
+  font-weight: 500;
+  background: #f9f9f9;
+  padding: 2px 4px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  position: relative;
+  /* &:after{
+    content: '';
+    position: absolute;
+    display: none;
+    background: url(../img/copy-icon.png) center center / contain no-repeat;
+    top: 0;
+    right: -38px;
+    width: 32px;
+    height: 32px;
+    bottom: 0;
+    margin: auto;
+    opacity: .7;
+  }*/
+}
+
+.clipboard:hover {
+  /* &:after{
+      display: inline-block;
+    }*/
+  background: #ececec;
+}
+
+.copied {
+  position: absolute;
+  right: 0;
+  font-size: 10px;
+  background: #8cf99f;
+  line-height: 1;
+  top: 100%;
+  z-index: 5;
+  padding: 4px;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  min-height: 50px;
+}
+
+.icon.sber {
+  background: url(../img/sberbank_icon.png) center center/50px no-repeat;
+}
+
+.icon.gaz {
+  background: url(../img/gazprombank_icon.jpg) center center/50px no-repeat;
+}
+
+.icon.yandex-money {
+  background: url(../img/yandex_icon.gif) center center/50px no-repeat;
+}
+
+.icon.kaspi-bank {
+  background: url(../img/kaspi_bank.png) center center/50px no-repeat;
+}
+
+.icon.qiwi {
+  background: url(../img/qiwi_icon.png) center center/100px no-repeat;
+}
+
+.icon.paypal {
+  background: url(../img/paypal_icon.png) center center/50px no-repeat;
+}
+
+.block {
+  margin: 5px 0;
 }
 
 @media (min-width: 576px) {
@@ -222,6 +307,15 @@ a.black-link {
   .black-block {
     font-size: 24px;
   }
+  .rekvisit-block {
+    font-size: 16px;
+  }
+  .copied {
+    font-size: 12px;
+  }
+  .block {
+    margin: 10px 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -241,6 +335,9 @@ a.black-link {
   }
   .zolgensma {
     font-size: 24px;
+  }
+  .rekvisit-block {
+    font-size: 20px;
   }
 }
 
@@ -299,5 +396,8 @@ a.black-link {
   }
   .black-block {
     font-size: 32px;
+  }
+  .rekvisit-block {
+    font-size: 24px;
   }
 }
