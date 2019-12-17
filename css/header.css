@@ -138,8 +138,9 @@ a.black-link {
 
 .banner-text {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
+  text-align: center;
   padding: 10px;
 }
 
@@ -155,7 +156,7 @@ a.black-link {
   font-weight: 600;
   position: relative;
   z-index: 9;
-  margin-top: -40px;
+  text-align: center;
   background: #fff;
 }
 
@@ -338,6 +339,10 @@ a.black-link {
   text-decoration: none;
 }
 
+.link__comment {
+  font-size: 16px;
+}
+
 @media (min-width: 576px) {
   h1 {
     font-size: 1.5rem;
@@ -347,6 +352,10 @@ a.black-link {
   }
   .savedima {
     font-size: 32px;
+  }
+  .banner-text {
+    text-align: left;
+    font-size: 22px;
   }
   .yellow-block {
     font-size: 24px;
@@ -377,7 +386,8 @@ a.black-link {
   .zolgensma {
     border: 5.3px solid;
     position: relative;
-    margin-top: -30px;
+    margin-top: -20px;
+    text-align: left;
   }
   .zolgensma:before {
     display: block;
@@ -432,6 +442,9 @@ a.black-link {
   .zolgensma:before {
     left: 64%;
     width: 96px;
+  }
+  .link__comment {
+    font-size: 18px;
   }
 }
 
