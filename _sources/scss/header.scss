@@ -6,7 +6,7 @@ html, body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
 }
-h1, h2, h3, h4, h5{
+h1, h2, .h2, h3, h4, h5{
   font-weight: 600;
 }
 img {
@@ -14,7 +14,7 @@ img {
   max-height: 100%;
 }
 
-h1, h2, h3{
+h1, h2, .h2, h3{
   font-size: 1rem;
   color: $color-red;
   text-transform: uppercase;
@@ -26,7 +26,7 @@ h1{
   text-align: center;
 }
 
-h2{
+h2, .h2{
   font-weight: 700;
   margin-top: 20px;
 }
@@ -218,11 +218,31 @@ a.black-link{
   margin-top: 20px;
 }
 
+
+.doc-slider{
+  background: #f1f1f1;
+  margin: 0 15px 50px;
+  margin-bottom: 50px!important;
+  &__item {
+    padding: 10px 5px;
+  }
+}
+
+.link{
+  color: #000;
+  margin: 10px 0;
+  text-decoration: underline;
+  display: inline-block;
+  &:hover, &:active{
+    text-decoration: none;
+  }
+}
+
 @include media-breakpoint-up(sm) {
   h1{
     font-size: 1.5rem;
   }
-  h2, h3{
+  h2, .h2, h3{
     font-size: 1.4rem;
   }
   .savedima{
@@ -247,10 +267,6 @@ a.black-link{
   .copied {
     font-size: 12px;
   }
-
-  .block{
-    margin: 10px 0;
-  }
   .main-slider {
     max-height: 220px;
     margin: 0;
@@ -258,7 +274,6 @@ a.black-link{
       height: 220px;
     }
   }
-
   .zolgensma {
     border: 5.3px solid;
     position: relative;
@@ -268,13 +283,28 @@ a.black-link{
       width: 88px;
     }
   }
+  .doc-slider{
+    background: #f1f1f1;
+    margin: 0 20px 0;
+    &__item {
+      padding: 20px 10px;
+    }
+  }
+  .slick-prev:before,
+  .slick-next:before
+  {
+    font-size: 40px;
+  }
+  .link{
+    font-size: 20px;
+  }
 }
 
 @include media-breakpoint-up(md) {
   h1{
     font-size: 2rem;
   }
-  h2, h3{
+  h2, .h2, h3{
     font-size: 1.8rem;
   }
   .savedima{
@@ -308,7 +338,7 @@ a.black-link{
   h1{
     font-size: 2.2rem;
   }
-  h2, h3{
+  h2, .h2, h3{
     font-size: 1.6rem;
   }
   .savedima{
@@ -337,7 +367,7 @@ a.black-link{
   h1{
     font-size: 2.4rem;
   }
-  h2, h3{
+  h2, .h2, h3{
     font-size: 1.8rem;
   }
   .header{

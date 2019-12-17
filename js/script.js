@@ -30,4 +30,30 @@ $(function(){
         slidesToScroll: 1,
 
     });
+
+    var $docSLider = $('.doc-slider');
+
+    $docSLider.slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        speed: 600,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        lazyLoad: 'progressive',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
 });
