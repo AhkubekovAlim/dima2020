@@ -426,6 +426,9 @@ a.black-link {
   .main-slider__item {
     height: 300px;
   }
+  .zolgensma {
+    font-size: 28px;
+  }
   .zolgensma:before {
     left: 64%;
     width: 96px;
