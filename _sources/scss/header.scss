@@ -178,6 +178,9 @@ a.black-link{
   bottom: 0;
   top: 0;
   min-height: 50px;
+  &.sms {
+    background: url(../img/sms_icon.png) center center / 50px no-repeat;
+  }
   &.sber {
     background: url(../img/sberbank_icon.png) center center / 50px no-repeat;
   }
@@ -238,9 +241,8 @@ a.black-link{
     text-decoration: none;
   }
 }
-
-.link__comment {
-  font-size: 16px;
+.button{
+  font-size: 20px;
 }
 
 @include media-breakpoint-up(sm) {
@@ -343,9 +345,6 @@ a.black-link{
       left: 64%;
       width: 96px;
     }
-  }
-  .link__comment {
-    font-size: 18px;
   }
 }
 @include media-breakpoint-up(lg) {
