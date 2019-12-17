@@ -11,11 +11,23 @@ $(function(){
     }
 
     clipboard.on('success', function(e) {
-        console.info('Action:', e.action);
-        console.info('Text:', e.text);
-        console.info('Trigger:', e.trigger);
         showCopiedMessage($(e.trigger));
         e.clearSelection();
     });
 
+
+    var $mainSLider = $('.main-slider');
+
+    $mainSLider.slick({
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        fade: true,
+        arrows: false,
+        speed: 600,
+        autoplaySpeed: 6000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+    });
 });
