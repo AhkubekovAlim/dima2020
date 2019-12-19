@@ -358,19 +358,20 @@ a.black-link {
 .fond-btn {
   font-size: 16px;
   padding: 10px 20px;
-  background: #106ccc;
-  color: #fff;
+  background: #ffbc16;
+  color: #000;
   font-weight: 700;
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
   margin: 10px auto;
+  cursor: pointer;
 }
 
-.fond-btn:hover {
+.fond-btn:hover, .fond-btn:active {
   text-decoration: none;
-  background: #3c92cc;
-  color: #fff;
+  background: #ff5d15;
+  color: #000;
 }
 
 .border-blue {
@@ -387,6 +388,14 @@ a.black-link {
 
 .footer div {
   margin-bottom: 10px;
+}
+
+.geogr-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: baseline;
+  background: url(../img/fond-pomoshhi-geografiya-dobra-1.jpg) center center/contain no-repeat;
 }
 
 .soc-icon {
@@ -527,6 +536,10 @@ a.black-link {
   }
   .footer {
     font-size: 20px;
+  }
+  .geogr-icon {
+    width: 28px;
+    height: 30px;
   }
 }
 
