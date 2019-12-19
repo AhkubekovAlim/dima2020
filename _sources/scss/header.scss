@@ -14,11 +14,15 @@ img {
   max-height: 100%;
 }
 
-h1, h2, .h2, h3{
+h1, h2, .h2, h3, .h3{
   font-size: 1rem;
   color: $color-red;
   text-transform: uppercase;
   margin: 12px 0;
+}
+
+h4{
+  font-size: 1.2rem;
 }
 
 h1{
@@ -26,12 +30,12 @@ h1{
   text-align: center;
 }
 
-h2, .h2{
+h2, .h2, h4{
   font-weight: 700;
   margin-top: 20px;
 }
 
-h3{
+h3, .h3{
   font-weight: 700;
   margin-top: 20px;
   color: $blue-text;
@@ -64,6 +68,9 @@ a.black-link{
 
 .blue-text{
   color: $blue-text;
+}
+.red-text{
+  color: $color-red;
 }
 
 .zolgensma{
@@ -244,12 +251,67 @@ a.black-link{
 .button{
   font-size: 20px;
 }
+.fond-btn{
+  font-size: 16px;
+  padding: 10px 20px;
+  background: #106ccc;
+  color: #fff;
+  font-weight: 700;
+  transition: 300ms;
+  margin: 10px auto;
+  &:hover{
+    text-decoration: none;
+    background: #3c92cc;
+    color: #fff;
+  }
+}
+
+.border-blue{
+  width: 40%;
+  margin: 20px auto;
+  border-top: 2px solid $blue-text;
+}
+
+.footer{
+  padding: 25px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  div{
+    margin-bottom: 10px;
+  }
+}
+
+.soc-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  vertical-align: middle;
+  &.insta{
+    background: url(../img/instagram_logo.png) center center / contain no-repeat;
+  }
+  &.fb{
+    background: url(../img/facebook_icon.png) center center / contain no-repeat;
+  }
+  &.vk{
+    background: url(../img/vk-logo--fb.png) center center / contain no-repeat;
+  }
+  &.phone{
+    background: url(../img/phone_icon.png) center center / contain no-repeat;
+  }
+  &.ok{
+    background: url(../img/Odnoklassniki.svg) center center / contain no-repeat;
+  }
+  &.wp{
+    background: url(../img/whatsapp_icon.png) center center / contain no-repeat;
+  }
+}
 
 @include media-breakpoint-up(sm) {
   h1{
     font-size: 1.5rem;
   }
-  h2, .h2, h3{
+  h2, .h2, h3, .h3, h4{
     font-size: 1.4rem;
   }
   .savedima{
@@ -310,13 +372,17 @@ a.black-link{
   .link{
     font-size: 20px;
   }
+  .fond-btn{
+    font-size: 20px;
+    padding: 10px 20px;
+  }
 }
 
 @include media-breakpoint-up(md) {
   h1{
     font-size: 2rem;
   }
-  h2, .h2, h3{
+  h2, .h2, h3, .h3, h4{
     font-size: 1.8rem;
   }
   .savedima{
@@ -346,12 +412,15 @@ a.black-link{
       width: 96px;
     }
   }
+  .footer {
+    font-size: 20px;
+  }
 }
 @include media-breakpoint-up(lg) {
   h1{
     font-size: 2.2rem;
   }
-  h2, .h2, h3{
+  h2, .h2, h3, .h3, h4{
     font-size: 1.6rem;
   }
   .savedima{
@@ -380,7 +449,7 @@ a.black-link{
   h1{
     font-size: 2.4rem;
   }
-  h2, .h2, h3{
+  h2, .h2, h3, .h3, h4{
     font-size: 1.8rem;
   }
   .header{

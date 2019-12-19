@@ -96,11 +96,15 @@ img {
   max-height: 100%;
 }
 
-h1, h2, .h2, h3 {
+h1, h2, .h2, h3, .h3 {
   font-size: 1rem;
   color: #fb284c;
   text-transform: uppercase;
   margin: 12px 0;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -108,12 +112,12 @@ h1 {
   text-align: center;
 }
 
-h2, .h2 {
+h2, .h2, h4 {
   font-weight: 700;
   margin-top: 20px;
 }
 
-h3 {
+h3, .h3 {
   font-weight: 700;
   margin-top: 20px;
   color: #0669bf;
@@ -146,6 +150,10 @@ a.black-link {
 
 .blue-text {
   color: #0669bf;
+}
+
+.red-text {
+  color: #fb284c;
 }
 
 .zolgensma {
@@ -347,11 +355,77 @@ a.black-link {
   font-size: 20px;
 }
 
+.fond-btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  background: #106ccc;
+  color: #fff;
+  font-weight: 700;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  margin: 10px auto;
+}
+
+.fond-btn:hover {
+  text-decoration: none;
+  background: #3c92cc;
+  color: #fff;
+}
+
+.border-blue {
+  width: 40%;
+  margin: 20px auto;
+  border-top: 2px solid #0669bf;
+}
+
+.footer {
+  padding: 25px 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer div {
+  margin-bottom: 10px;
+}
+
+.soc-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.soc-icon.insta {
+  background: url(../img/instagram_logo.png) center center/contain no-repeat;
+}
+
+.soc-icon.fb {
+  background: url(../img/facebook_icon.png) center center/contain no-repeat;
+}
+
+.soc-icon.vk {
+  background: url(../img/vk-logo--fb.png) center center/contain no-repeat;
+}
+
+.soc-icon.phone {
+  background: url(../img/phone_icon.png) center center/contain no-repeat;
+}
+
+.soc-icon.ok {
+  background: url(../img/Odnoklassniki.svg) center center/contain no-repeat;
+}
+
+.soc-icon.wp {
+  background: url(../img/whatsapp_icon.png) center center/contain no-repeat;
+}
+
 @media (min-width: 576px) {
   h1 {
     font-size: 1.5rem;
   }
-  h2, .h2, h3 {
+  h2, .h2, h3, .h3, h4 {
     font-size: 1.4rem;
   }
   .savedima {
@@ -411,13 +485,17 @@ a.black-link {
   .link {
     font-size: 20px;
   }
+  .fond-btn {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
 }
 
 @media (min-width: 768px) {
   h1 {
     font-size: 2rem;
   }
-  h2, .h2, h3 {
+  h2, .h2, h3, .h3, h4 {
     font-size: 1.8rem;
   }
   .savedima {
@@ -447,13 +525,16 @@ a.black-link {
     left: 64%;
     width: 96px;
   }
+  .footer {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 992px) {
   h1 {
     font-size: 2.2rem;
   }
-  h2, .h2, h3 {
+  h2, .h2, h3, .h3, h4 {
     font-size: 1.6rem;
   }
   .savedima {
@@ -483,7 +564,7 @@ a.black-link {
   h1 {
     font-size: 2.4rem;
   }
-  h2, .h2, h3 {
+  h2, .h2, h3, .h3, h4 {
     font-size: 1.8rem;
   }
   .header {
