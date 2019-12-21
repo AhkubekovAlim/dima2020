@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /_sources/
+
+User-agent: Yandex
+Disallow: /_sources/
+Host: dima2020.ru
