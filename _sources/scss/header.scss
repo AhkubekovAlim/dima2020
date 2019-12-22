@@ -316,6 +316,15 @@ a.black-link{
   }
 }
 
+.video-btn{
+  width: 100%;
+}
+.video-title {
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
 @include media-breakpoint-up(sm) {
   h1{
     font-size: 1.5rem;
