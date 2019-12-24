@@ -430,6 +430,14 @@ a.black-link {
   background: url(../img/whatsapp_icon.png) center center/contain no-repeat;
 }
 
+.soc-icon.telegram {
+  background: url(../img/telegram_icon.png) center center/contain no-repeat;
+}
+
+.soc-icon.viber {
+  background: url(../img/viber_icon.png) center center/contain no-repeat;
+}
+
 .video-btn {
   width: 100%;
 }
