@@ -331,6 +331,12 @@ a.black-link{
   margin-bottom: 20px;
 }
 
+.petition {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 @include media-breakpoint-up(sm) {
   h1{
     font-size: 1.5rem;
@@ -442,6 +448,9 @@ a.black-link{
   .geogr-icon {
     width: 28px;
     height: 30px;
+  }
+  .petition {
+    font-size: 22px;
   }
 }
 @include media-breakpoint-up(lg) {
